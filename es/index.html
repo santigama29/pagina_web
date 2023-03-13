@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Santiago</a>
+            </div>
+            <div>
+                <span class="en"> Inglés</span>
+                <input type="checkbox" class="check" checked>
+                <span class="es"> Español</span>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="D:\\Mi_Portfolio\\miFoto.png" alt="">
+            </div>
+            <h1>Santiago Gamarra</h1>
+            <h2>Desarrollador de Software</h2>
+            <div class="redes">
+                <a href="https://www.instagram.com/santigama29/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/santiago-gamarra-5a0b55243/"><i class="fa-brands fa-linkedin"></i></a>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mi</h2>
+            <p><span>Hola, Soy Santiago Gamarra.</span> Cuento con amplia experiencia en atención al cliente, poseo gran capacidad de trabajo en equipo, soy proactivo en el aprendizaje de nuevas disciplinas y facilidad para adaptarme a los cambios. Actualmente me encuentro cursando el ultimo año de la Tecnicatura Universitaria en Programación en UTN, dominando los lenguajes C# y .Net.
+            </p>
+
+            <div class="fila">
+                <!-- datos personales-->
+                <div class="col">
+                  <h3>Datos Personales</h3>
+                  <ul>
+                    <li>
+                        <strong>Cumpleaños</strong>
+                        22-07-1986
+                    </li>
+                    <li>
+                        <strong>Teléfono</strong>
+                        0343 154169525
+                    </li>
+                    <li>
+                        <strong>Email</strong>
+                        santigama29@gmail.com
+                    </li>
+                    <li>
+                        <strong>Dirección</strong>
+                        Paraná, Entre Ríos, Argentina
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                  <h3>Intereses</h3>
+                  <div class="contenedor-intereses">
+                    <div class="interes">
+                        <i class="fa-solid fa-laptop"></i>
+                        <span>PROGRAMAR</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-plane"></i>
+                        <span>VIAJAR</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-dumbbell"></i>
+                        <span>ENTRENAR</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-motorcycle"></i>
+                        <span>MOTOS</span>
+                    </div>
+
+                  </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section id="skills" class="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skills -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>C-Sharp(C#)</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>45%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>47%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Profesional Skills -->
+                <div class="col">
+                    <h3>Profesional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+          <h2>Curriculum</h2>
+          <div class="fila">
+            <div class="col izquierda">
+              <h3>Educación</h3>
+              <div class="item izq">
+                <h4>Programación</h4>
+                <span class="casa">Universidad Tecnológica Nacional</span>
+                <span class="fecha">2022-Actualidad</span>
+                <p>Primer año aprobado, empezando a cursar segundo año.
+                </p>
+                <div class="conectori">
+                    <div class="circuloi"></div>
+                </div>
+              </div>
+              <div class="item izq">
+                <h4>Bioingeniera</h4>
+                <span class="casa">Universidad Nacional Entre Ríos</span>
+                <span class="fecha">2006-2010</span>
+                <p>Aprobado casi todo primer año, algunas materias de segundo y tercer año.
+                </p>
+                <div class="conectori">
+                    <div class="circuloi"></div>
+                </div>                
+              </div>
+              <div class="item izq">
+                <h4>Secundario</h4>
+                <span class="casa">Instituto María Grande</span>
+                <span class="fecha">1998-2004</span>
+                <p>Secundario completo con título de bachiller.
+                </p>
+                <div class="conectori">
+                    <div class="circuloi"></div>
+                </div>                
+              </div>
+            </div>
+            <div class="col derecha">
+                <h3>Experiencia de Trabajo</h3>
+                <div class="item der">
+                  <h4>Personal Trainer</h4>
+                  <span class="casa">Buena Vida Paraná</span>
+                  <span class="fecha">2021-Actualidad</span>
+                  <p>Sala propia de entrenamiento personalizado.
+                  </p>
+                  <div class="conectord">
+                    <div class="circulod"></div>
+                  </div>                  
+                </div>
+                <div class="item der">
+                    <h4>Cadete</h4>
+                    <span class="casa">Pedidos Ya</span>
+                    <span class="fecha">2020-2021</span>
+                    <p>Reparto de pedidos en la ciudad de Paraná.
+                    </p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>                    
+                  </div>
+                  <div class="item der">
+                    <h4>Encargado de Barra</h4>
+                    <span class="casa">Peñón del Águila</span>
+                    <span class="fecha">2019-2020</span>
+                    <p>Encargado de barra y temporalmente encargado general del local.
+                    </p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>                    
+                  </div>
+              </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="D:\\Mi_Portfolio\\p1.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="D:\\Mi_Portfolio\\p2.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="D:\\Mi_Portfolio\\p3.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                  <form action="https://formsubmit.co/santigama29@gmail.com" method="POST">
+                    <input type="text" name="name" placeholder="Tú Nombre">
+                  <input type="text" name="number" placeholder="Número Telefonico">
+                  <input type="text" name="email" placeholder="Dirección de correo">
+                  <input type="text" name="subject" placeholder="Tema">
+                  <textarea name="comments" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                  <button type="submit">
+                    Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                    <span class="overlay"></span>
+                  </button>                  
+                  </form>  
+                  
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                  <img src="D:\\Mi_Portfolio\\ubi.png" alt="">
+                  <div class="info">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Paraná, Entre Ríos
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            0343 - 154169525
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            santigama29@gmail.com
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.instagram.com/santigama29/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/santiago-gamarra-5a0b55243/"><i class="fa-brands fa-linkedin"></i></a>
+
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>
